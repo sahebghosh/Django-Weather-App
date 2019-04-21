@@ -1,0 +1,63 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+body{
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  color: #505962;
+  background-color: #ebf4fa;
+}
+
+.narrow {
+    width: 75%;
+    margin: 1.5rem auto;
+    padding-top: 2rem;
+  }
+  .narrow h1 {
+      font-size: 2.4rem;
+    }
+
+.jumbotron{
+    margin-bottom: 0;
+    margin-top: 1rem;
+    padding: 2rem 0 3.5rem; 
+  }
+
+h3.heading {
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin-bottom: 1.9rem;
+  }
+  .heading-underline{
+    width: 3rem;
+    height: .2rem;
+    background-color: #1ebba3;
+    margin: 0 auto 2rem;
+  }
+
+  footer{
+    background-color: #40474e;
+    color: white;
+    padding: 2rem 0 2rem;
+    margin-top: 1rem;
+  }
+
+  footer a{
+    color: white;
+  }
+  
+  footer .svg-inline--fa{
+    font-size: 2.5rem;
+    margin: 1.2rem .5rem 0 0;
+  }
+  
+  footer .svg-inline--fa:hover{
+    color: #1ebba3!important;
+  }
+  
+  hr.socket {
+    width: 100%;
+    border-top: .2rem solid #666b71;
+    margin-top: 3rem;
+  }
+

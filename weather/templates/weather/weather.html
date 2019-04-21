@@ -1,0 +1,29 @@
+{% extends "weather/base.html" %}
+
+{% block content %}
+
+<div>
+    <div class="row no-gutters border border-light shadow">
+        <div class="col-md-4">
+          <img src="http://openweathermap.org/img/w/{{ city_weather.Icon }}.png" class="card-img" alt="Weather Icon" style="width:120px">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h4 class="card-title">{{ city_weather.City }} Weather Details</h4>
+            <hr style="width: 100%;
+            border-top: .2rem solid #1ebba3;
+            margin-top: 1rem;">
+            <div class="card-text">
+                  <h6>Temperature: {{ city_weather.Temperature }}° C</h6>
+                  <h6>Humidity: {{ city_weather.Humidity }} %</h6>
+                  <h6>Pressure: {{ city_weather.Pressure }} hPa</h6>
+                  <h6>Description: {{ city_weather.Description }}</h6>
+                  <h6>Country code: {{ city_weather.Country }}</h6>
+                  <a href="{% url 'index' %}" class="btn btn-outline-success">Back</a>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+{% endblock %}

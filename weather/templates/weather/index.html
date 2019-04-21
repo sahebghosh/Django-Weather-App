@@ -1,0 +1,10 @@
+{% extends "weather/base.html" %}
+
+{% block content %}
+
+    <form method="POST" action="{% url 'weather' %}" class="d-flex">
+        {% csrf_token %}
+        <input type="text" class="form-control m-1" name="cityname" placeholder="Enter City Name" autocomplete="off" autofocus required>
+        <button class="btn btn-success" type="submit">Search</button>
+    </form>
+{% endblock %}
